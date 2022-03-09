@@ -21,11 +21,12 @@ function onload()
     SetCloudCollectionName('games_vassal_fantasy')
 
     UpdateCard("Arquitens-class Command Cruiser",59,{
-        cost = 57,
+        defense_tokens = {DEF_EVADE,DEF_REDIRECT,DEF_REDIRECT},	
         maneuver = {{"II"},{"I","II"},{"I","-","II"}},
         front = "https://vassalwarlords.twilightpeaks.net/assets/cards/ships/empire/shipcard_arquitens-class-command-cruiser.png"
     })
     UpdateCard("Arquitens-class Light Cruiser",54,{
+        defense_tokens = {DEF_EVADE,DEF_REDIRECT,DEF_REDIRECT},    
         maneuver = {{"II"},{"I","II"},{"I","-","II"}},
         front = "https://vassalwarlords.twilightpeaks.net/assets/cards/ships/empire/shipcard_arquitens-class-light-cruiser.png"
     })
@@ -404,7 +405,6 @@ function onload()
         front = "https://vassalwarlords.twilightpeaks.net/assets/cards/upgrades/w0_cpt_defense-liaison.png"
     })
     UpdateCard("Veteran Captain",3, {
-        cost = 2,
         front = "https://vassalwarlords.twilightpeaks.net/assets/cards/upgrades/w1_cpt_veteran-captain.png"
     })
     UpdateCard("Weapons Liaison",3, {
